@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1>Mundial<h1>
+
+<script>
+  function saltarLinea() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+	}  
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+  var anhoMundial = 1930;
+  var limite = parseInt(prompt("Ingresa el anho para cualar los mundiales"))
+
+  <!-- alert("Hubo mundial de la FIFA en el anho " + anhoMundial); -->
+
+  while (anhoMundial <= limite) {
+
+    imprimir("Hubo undial de la FIFA en el anho " + anhoMundial);
+    anhoMundial = anhoMundial + 4;
+  }
+
+  imprimir("Fin");
+</script>

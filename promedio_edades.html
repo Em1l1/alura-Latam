@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<h1>Tabla de Multiplicar<h1>
+
+<script>
+  function saltarLinea() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+	}  
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+  var edadPadre = 42;
+  var edadMadre = 38;
+  var edadHijo = 15;
+  var edadHija = 12;
+
+  var totalEdad = edadPadre + edadMadre + edadHija + edadHijo
+
+	var mediaEdad = totalEdad / 4
+
+	imprimir("La media de las edades es " + mediaEdad)
+
+
+	var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia"))
+
+	var contador = 1;
+	var totalEdad = 0
+
+	while (contador <= numeroMiembros) {
+
+		edad = parseInt(prompt("Ingresa la edad del familiar"))
+		totalEdad = totalEdad + edad
+		contador++;
+	}
+
+	mediaEdades = totalEdad / numeroMiembros;
+
+	imprimir(totalEdad)
+	imprimir("La media de las edades de la familia es: " + mediaEdad)
+	imprimir("Fin")
+
+	// Imprimir numeros divisibles en 2 hasta el 100
+/*	var i  = 2;
+
+	while(i <= 100) {
+		imprimir(i);
+		i++;
+	} */
+</script>
