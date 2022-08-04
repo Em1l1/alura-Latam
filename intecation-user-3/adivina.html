@@ -7,8 +7,9 @@
 </button>
 
 <script>
-	var secreto = 5;
+	var secreto = Math.round(Math.random()*10);
 	var input = document.querySelector("input");
+	input.focus()
 
 	function verificar() {
 
@@ -18,6 +19,7 @@
 			alert("Oopsgia: " + parseInt(input.value));
 		}
 	input.value = "";
+	input.focus();
 	}	
 
 	var button = document.querySelector("button");
