@@ -17,9 +17,24 @@
     pincel.strokeRect(x,y,50,50)
   }
   
-
   dibujarCuadrado(0, 0, "red");
   dibujarCuadrado(0, 60, "yellow");
   dibujarCuadrado(0,120, "green");
 
+  document.write("<h3>Cicle While</h3>")
+  var x = 0
+  while(x < 600){
+    dibujarCuadrado(x,0,"red");
+    dibujarCuadrado(x, 60, "yellow")
+    dibujarCuadrado(x, 120, "green")
+
+    x = x + 50;
+  }
+
+  document.write("<h3>Cicle for</h3>")
+  for (var x = 0; x < 600; x = x + 50){
+    dibujarCuadrado(x,200,"red");
+    dibujarCuadrado(x, 250,"yellow");
+    dibujarCuadrado(x,300,"green");
+  }
 </script>
