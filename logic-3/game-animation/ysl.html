@@ -7,16 +7,19 @@
 <script>
   document.write("<h1>Canvas</h1>")
 
-  function dibujarCuadradoVerder(){
+  function dibujarCuadrado(x,y,color){
     var pantalla = document.querySelector("canvas");
     var pincel = pantalla.getContext("2d");
   
-    pincel.fillStyle = "lightgrey"
-    pincel.fillRect(0,0,50,50)
+    pincel.fillStyle = color
+    pincel.fillRect(x,y,50,50)
     pincel.strokeStyle = "black"
-    pincel.strokeRect(0,0,50,50)
+    pincel.strokeRect(x,y,50,50)
   }
+  
 
-  dibujarCuadradoVerder();  
+  dibujarCuadrado(0, 0, "red");
+  dibujarCuadrado(0, 60, "yellow");
+  dibujarCuadrado(0,120, "green");
 
 </script>
