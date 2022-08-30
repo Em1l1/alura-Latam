@@ -1,0 +1,27 @@
+body {
+  background: #cccccc;
+}
+
+#banner {
+  width: 100%;
+  heigth: 
+}
+
+h1 {
+  text-transform: capitalize ;
+  text-align: center;
+}
+
+p {
+  font-size: 20px; 
+  text-align: center;
+}
+
+em strong {
+  color: rebeccapurple;
+}
+
+#mission {
+  font-size: 25px;
+}
+
