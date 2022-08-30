@@ -1,13 +1,21 @@
 body {
-  background: #cccccc;
 }
 
 #banner {
   width: 100%;
-  heigth: 
 }
 
-h1 {
+.principal {
+  background: #cccccc;
+  padding: 20px;
+}
+
+.titulo-principal {
+  padding-left: 30px;
+  text-transform: capitalize;
+}
+
+.titulo-centro {
   text-transform: capitalize ;
   text-align: center;
 }
@@ -25,3 +33,28 @@ em strong {
   font-size: 25px;
 }
 
+.diferenciales {
+  background: #fff;
+  padding: 20px;
+}
+
+.titulo-centro,
+.items {
+  text-transform: capitalize;
+}
+
+.items {
+  font-style: italic;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+.imagen--diferenciales {
+  width: 50%;
+  border-radius: 10px;
+}
