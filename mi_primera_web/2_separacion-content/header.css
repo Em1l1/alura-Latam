@@ -1,14 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background-color: #BBBBBB;
+  padding: 20px 0;
 }
 
-nav li {
-  display: inline-block;
+.caja {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  top:110px;
+  right: 0;
+}
+
+nav li{
+  display: inline;
   margin: 0 0 0 15px;
 }
-a {}
 
-nav a {
+nav a{
   text-transform: uppercase;
   color: #000000;
   font-weight: bold;

@@ -5,17 +5,43 @@
     <title>Productos - Barberia Alura</title>
     <link rel="stylesheet" href="productos.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <header>
-      <h1><a href="index.html"><img src="image/logo.png"></a></h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="productos.html">productos</a></li>
-          <li><a href="form.html">contacto</a></li>
-        </ul>
-      </header>
-    </nav>
+      <div class="caja">
+        <h1><a href="index.html"><img src="image/logo.png"></a></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="productos.html">productos</a></li>
+            <li><a href="form.html">contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <ul class="productos">
+        <li>
+          <h2>Cabello</h2>
+          <img src="./image/cabello.jpg" alt="cabello">
+          <p class="producto-descripcion">Con tijera o maquina, a gusto del cliente</p>
+          <p  class="producto-precio">$ 10.00</p>
+        </li>
+        <li>
+          <h2>Barba</h2>
+          <img src="./image/barba.jpg" alt="barba">
+          <p class="producto-descripcion">Corte y Disenno profesional de Barba</p>
+          <p class="producto-precio">$ 8.00</p>
+        </li>
+        <li>
+          <h2>Cabello + Barba</h2>
+          <img src="./image/cabello+barba.jpg" alt="cabello + barba">
+          <p class="producto-descripcion">Paquete completo de Cabello y Barba</p>  
+          <p class="producto-precio">$ 15.00</p>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
