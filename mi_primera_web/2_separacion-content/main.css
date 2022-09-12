@@ -1,0 +1,13 @@
+
+
+footer {
+  text-align: center;
+  background: url(image/bg.jpg);
+  padding: 40px;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px;
+}

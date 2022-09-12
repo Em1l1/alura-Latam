@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Productos - Barberia Alura</title>
+    <title>Contactos - Barberia Alura</title>
     <link rel="stylesheet" href="productos.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="form.css">
   </head>
   <body>
     <header>
@@ -16,6 +17,27 @@
           <li><a href="productos.html">productos</a></li>
           <li><a href="form.html">contacto</a></li>
         </ul>
-      </header>
+      </nav>
+    </header>
+
+    <main>
+      <form>
+        <label for="nombreId">Nombre y Apellido</label>
+        <input type="text" id="nombreId">
+
+        <label for="correo">Correo Electronico</label>
+        <input type="emial" id="correo">
+
+        <label for="telefono">Numero de Telefono</label>
+        <input type="text" id="telefono">
+
+        <input type="submit" value="Enviar formularion">
+      </form>
+    </main>
+
+    <footer>
+      <img src="image/logo-blanco.png">
+      <p class="copyright">&copy; Copyright Barberia Alura - 2020</p>
+    </footer>
   </body>
 </html>
