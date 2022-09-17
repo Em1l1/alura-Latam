@@ -23,32 +23,30 @@
     <main>
       <form>
         <label for="nombreId">Nombre y Apellido</label>
-        <input type="text" id="nombreId">
+        <input type="text" id="nombreId" class="input-padron">
 
         <label for="correo">Correo Electronico</label>
-        <input type="emial" id="correo">
+        <input type="emial" id="correo" class="input-padron">
 
         <label for="telefono">Numero de Telefono</label>
-        <input type="text" id="telefono">
+        <input type="text" id="telefono" class="input-padron">
 
         <label for="mensaje" >Mesaje</label>
-        <textarea name="" id="mensaje" cols="70" rows="10"></textarea>
+        <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
 
         <div>
-          <p>Como le gustaria que lo contactemos?</p>
+          <p class="test">Como le gustaria que lo contactemos?</p>
 
-          <label for="radio-email">Email</label>
-          <input type="radio" value="email" id="radio-email" name="contacto">
+          <label for="radio-email"><input type="radio" value="email" id="radio-email" name="contacto">Email</label>
           
-          <label for="radio-telefono">Telefono</label>
-          <input type="radio" value="telefono" id="radio-telefono" name="contacto">
+          <label for="radio-telefono"><input type="radio" value="telefono" id="radio-telefono" name="contacto">Telefono</label>
           
-          <label for="radio-whatsapp">WhatApp</label>
-          <input type="radio" value="whatsapp" id="radio-whatsapp" name="contacto">  
+          <label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="contacto">WhatApp</label>
         </div>
 
-        <label><input type="checkbox">Le gustaria recibir novedades de la Barberia Alura</label>
-          <input type="submit" value="Enviar formularion">
+        <label class="box"><input type="checkbox">Le gustaria recibir novedades de la Barberia Alura</label>
+        
+        <input type="submit" value="Enviar formularion">
       </form>
     </main>
 
