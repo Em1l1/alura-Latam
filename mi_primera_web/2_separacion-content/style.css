@@ -58,20 +58,13 @@ em strong {
 
 .items {
   font-style: italic;
+  line-height: 1.8;
 }
 
-.details {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
-}
 
 .utensilios {
   width: 300px;
   border-radius: 15px;
-  float: left;
-  margin: 0 20px 20px 0;
 }
 
 .mapa {
@@ -81,6 +74,18 @@ em strong {
 .mapa p {
   margin: 0  0 2em;
   text-align: center;
+}
+
+.contenido-deferenciales {
+  width: 640px;
+  margin: 0 auto;
+  float: left;
+}
+
+.details {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .imagen--diferenciales {
