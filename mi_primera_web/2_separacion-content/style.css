@@ -19,6 +19,8 @@ body {
   font-size: 2em;
   font-weight: bold;
   margin: 0 0 1em;
+  clear: left;
+  text-align: center;
 }
 
 .titulo-secondary {
@@ -62,6 +64,13 @@ em strong {
   vertical-align: top;
   width: 20%;
   margin-right: 15%;
+}
+
+.utensilios {
+  width: 300px;
+  border-radius: 15px;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 .imagen--diferenciales {
