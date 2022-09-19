@@ -51,7 +51,7 @@ em strong {
   padding: 20px;
 }
 
-.titulo-centro,
+.titulo-first,
 .items {
   text-transform: capitalize;
 }
@@ -86,6 +86,14 @@ em strong {
   width: 40%;
   display: inline-block;
   vertical-align: top;
+}
+
+.items:first-child {
+/* 
+  .items:nth-child(1|2n|) -> Elegir que hijo pintar
+  .items:last-child -> ultimo
+*/
+  font-weight: bold;
 }
 
 .imagen--diferenciales {
