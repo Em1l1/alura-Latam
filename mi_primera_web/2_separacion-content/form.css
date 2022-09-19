@@ -7,7 +7,7 @@ form {
   margin: 40px 0;
 }
 
-form label, form p {
+form label, form legend {
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
@@ -24,6 +24,24 @@ form label, form p {
   margin: 20px 0;
 }
 
-p {
-  color: red;
+fieldset {
+  border: none;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background-color: orangered;
+  transform: scale(1.1); /* rotate(10deg); */
 }
