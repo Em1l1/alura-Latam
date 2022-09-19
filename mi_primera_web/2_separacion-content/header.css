@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -32,6 +33,7 @@ nav a{
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav a:hover {
