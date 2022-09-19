@@ -4,7 +4,7 @@ body {
   box-sizing: border-box ;
 }
 
-#banner {
+.banner {
   width: 100%;
 }
 
@@ -13,26 +13,33 @@ body {
   padding: 20px;
 }
 
-.titulo-principal {
+.titulo-first {
   padding-left: 30px;
   text-transform: capitalize;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 0 1em;
 }
 
-.titulo-centro {
+.titulo-secondary {
   text-transform: capitalize ;
   text-align: center;
 }
 
-p {
+.principal p {
+  margin: 0 0 2em;
   font-size: 20px; 
   text-align: center;
 }
 
+.principal em {
+  font-style: italic;
+}
 em strong {
-  color: rebeccapurple;
+  color: blueviolet;
 }
 
-#mission {
+.mission {
   font-size: 25px;
 }
 
@@ -50,7 +57,7 @@ em strong {
   font-style: italic;
 }
 
-ul {
+.details {
   display: inline-block;
   vertical-align: top;
   width: 20%;
@@ -58,7 +65,7 @@ ul {
 }
 
 .imagen--diferenciales {
-  width: 50%;
+  width: 60%;
   border-radius: 10px;
 }
 
