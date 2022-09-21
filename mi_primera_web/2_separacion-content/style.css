@@ -10,8 +10,8 @@ body {
 }
 
 .principal {
-  background: #cccccc;
-  padding: 20px;
+  background: #fefefe;
+  padding: 3em 0;
 }
 
 .titulo-first {
@@ -23,6 +23,26 @@ body {
   clear: left;
   text-align: center;
 }
+
+.titulo-first:first-letter {
+  font-weight: bold;
+}
+
+/* p:first-line {
+  font-style: bold;
+}
+
+.titulo-first:before {
+  content: "[";
+}
+
+.titulo-first:after {
+  content: "]";
+}
+
+p.first-line {
+  font-style: italic;
+} */
 
 .titulo-secondary {
   text-transform: capitalize ;
@@ -47,8 +67,10 @@ em strong {
 }
 
 .diferenciales {
-  background: #fff;
+  background: #888888;
   padding: 20px;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .titulo-first,
@@ -61,6 +83,9 @@ em strong {
   line-height: 1.8;
 }
 
+.items:before {
+  content: "⭐";
+}
 
 .utensilios {
   width: 300px;
@@ -69,11 +94,18 @@ em strong {
 
 .mapa {
   padding: 3em 0;
+  background: linear-gradient(#FEFEFEFE, #888888);
+  /* background: radial-gradient(white, black, pink, gray); */
 }
 
 .mapa p {
   margin: 0  0 2em;
   text-align: center;
+}
+
+.mapa-contenido {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .contenido-deferenciales {
