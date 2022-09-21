@@ -47,7 +47,7 @@ img ~ p {
   margin: 0 0 1em;
   clear: left;
   text-align: center;
-  color: rgba(0,0,0,0.5)
+  color: rgba(0,0,0,0.5);
 }
 
 .titulo-first:first-letter {
@@ -97,6 +97,7 @@ em strong {
   padding: 20px;
   width: 940px;
   margin: 0 auto;
+  box-shadow: unset 0 0 30px #000;
 }
 
 .titulo-first,
@@ -158,6 +159,7 @@ em strong {
   width: 60%;
   border-radius: 10px;
   transition: 400ms;
+  box-shadow: 10px 10px 30px 15px #000000;
 }
 
 .imagen--diferenciales:hover {
