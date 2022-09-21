@@ -40,3 +40,9 @@ nav a:hover {
   color: #c78c19;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 480px) {
+  .caja {
+    width: auto;
+  }
+}

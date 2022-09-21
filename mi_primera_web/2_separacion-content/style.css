@@ -171,3 +171,25 @@ em strong {
   margin: 1em auto;
 }
 
+@media screen and (max-width: 480px) {
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .principal, 
+  .mapa-contenido,
+  .contenido-deferenciales,
+  .video {
+    width: auto;
+  }
+
+  .lista-diferenciales,
+  .imagen--diferenciales {
+    width: 100%;
+  }
+}
