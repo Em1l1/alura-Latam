@@ -9,13 +9,21 @@
 </head>
 <body>  
   <main>
+    <header>
+      <img src="img/alura.png" alt="Logo de alura con la inicial de la letra a">
+    </header>
+
     <section>
-      <h1>Encriptador</h1>
       <textarea class="input-texto" cols="30" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+      <div class="botones">
+        <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+        <button class="desencriptar" onclick="btnDesencriptar">Desencriptar</button>
+      </div>
     </section>
 
     <section>
-
+      <textarea class="mensaje" cols="18" rows="8"></textarea>
+      <button class="copiar">Copiar</button>
     </section>
   </main>
   <script src="main.js"></script>
