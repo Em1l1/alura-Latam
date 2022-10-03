@@ -50,3 +50,20 @@
   width: 23%;
   gap: 6;
 }
+
+.videoSobre .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Responsive */
+
+.headerPrincipal .container {
+  flex-direction: column;
+  align-items: initial;
+  text-align: center;
+}
+
+.headerPrincipal-nav {
+  flex-direction: column;
+}
