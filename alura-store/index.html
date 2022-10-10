@@ -11,16 +11,32 @@
 	<link href="./assets/css/style.css" rel="stylesheet">
 	<link href="./assets/css/destacados.css" rel="stylesheet">
 	<link href="./assets/css/populares.css" rel="stylesheet">
+	<link href="./assets/css/responsive.css" rel="stylesheet">
 
 </head>
 
 <body class="app">
 	<header class="encabezado">
-		encabezado
+		<nav class="menu">
+			<ul class="menu__lista">
+				<li class="menu__item">
+					<a class="menu__link activo" href="#">
+						<i class="fas fa-home"></i>
+						Inicio
+					</a>
+					<a class="menu__link" href="#">
+						<i class="fas fa-mobile-alt"></i>
+						Aplicaciones</a>
+					<a class="menu__link" href="#">
+						<i class="fas fa-gamepad"></i>
+						Juegos
+					</a>
+				</li>
+			</ul>
+		</nav>
 
 	</header>
 	<main class="contenido">
-		contenido
 		<section class="destaques">
 			<div class="destaques__principal box">
 				<h3 class="destaques__titulo">Fornite</h3>
@@ -391,8 +407,9 @@
 		</section>
 
 	</main>
-	<footer class="rodapie">
-		Todos los derechos reservados &copy 2022
+
+	<footer class="footer">
+		Todos los derechos reservados &copy; 2022 Alura Store
 	</footer>
 	<script src="./assets/js/fontawesome.all.min.js"></script>
 </body>

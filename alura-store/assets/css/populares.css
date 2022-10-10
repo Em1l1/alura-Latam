@@ -1,5 +1,11 @@
 .populares {
-  padding: 3rem 2rem;
+  padding: 3rem 0;
+}
+
+.populares__contenido {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0rem;
 }
 
 .populares__card {
@@ -14,6 +20,9 @@
   width: calc(20% - 1rem);
 }
 
+.populares__card:last-child {
+  margin-right: 0;
+}
 
 .populares__card___imagen {
   grid-area: card-imagen;
@@ -33,10 +42,11 @@
 }
 
 .populares__card___descripcion {
-  display: flex;
-  flex-wrap: wrap;
-  grid-area: card-descripcion;
-  padding: 1rem 0rem;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* grid-area: card-descripcion; */
+  /* padding: 1rem 0rem; */
+
 }
 
 .populares__contenido {

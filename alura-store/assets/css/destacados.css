@@ -1,9 +1,15 @@
+.box {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
+
 .destaques {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 33.33% 33.33% 33.33% 33.33%;
-  height: calc(110vh - 30px);
-  gap: .6rem;
+  height: calc(100vh - 50px);
+  gap: .3rem;
 }
 
 .destaques__principal {
@@ -63,14 +69,10 @@
 
 .destaques__titulo {
   color: #fdfdfd;
-  background: rgb(0,0,0,0.5);
+  background: rgb(0,0,0,.5);
   width: 100%;
   text-align: center;
   padding: .6rem;
 }
 
-.box {
-  align-items: flex-end;
-  display: flex;
-  justify-content: center;
-}
+
