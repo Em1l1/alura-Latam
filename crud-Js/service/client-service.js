@@ -28,8 +28,6 @@ const crearNuevaLinea = (nombre, email) => {
 
 const table = document.querySelector("[data-table]");
 
-const http = new XMLHttpRequest();
-
 // Abrir http (metodo, url)
 // CRUD   - Metodos http
 // create - POST
@@ -37,22 +35,31 @@ const http = new XMLHttpRequest();
 // update - PUT/PATCH
 // delete - DELETE
 
-http.open("GET", "http://localhost:3000/perfil");
+const listaClientes = () => {
+  const promise = new Promise((resolve, reject) => {
+    const http = new XMLHttpRequest();
+    http.open("GET", "http://localhost:3000/perfil");
 
-http.send();
-http.onload = () => {
-  const data = JSON.parse(http.response);
-  console.log(data);
-  data.forEach((perfil) => {
-    const nuevaLinea = crearNuevaLinea(perfil.nombre, perfil.email);
-    table.appendChild(nuevaLinea);
+    http.send();
+
+    http.onload = () => {
+      const response = JSON.parse(http.response);
+      if (http.status >= 400) {
+        reject(response);
+      } else {
+        resolve(response);
+      }
+    };
   });
-
-  const http2 = new XMLHttpRequest();
-  http2.open("GET", "http://localhost:3000/perfil/hoy");
-  http2.send();
-  http2.onlo
-  ad = () => {
-    const http2 = JSON.parse(http2.response);
-  };
+  return promise;
 };
+
+listaClientes()
+  .then((data) => {
+    data.forEach((perfil) => {
+      const nuevaLinea = crearNuevaLinea(perfil.nombre, perfil.email);
+      table.appendChild(nuevaLinea);
+    });
+  })
+  .catch((error) => alert("Error"))
+
