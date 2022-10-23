@@ -16,4 +16,7 @@ Browser sync: browser-sync start --server --file . --host --port 5000 --startPat
 - [x] [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://youtu.be/8aGhZQkoFbQ)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8aGhZQkoFbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Js](https://www.youtube.com/embed/8aGhZQkoFbQ)
+## UUID
+
+[uuid](https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js)

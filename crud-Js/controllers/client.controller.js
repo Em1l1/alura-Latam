@@ -30,7 +30,7 @@ const crearNuevaLinea = (nombre, email) => {
 
 const table = document.querySelector("[data-table]");
 
-clientServicesgst.listaClientes()
+clientServices.listaClientes()
   .then((data) => {
     data.forEach((perfil) => {
       const nuevaLinea = crearNuevaLinea(perfil.nombre, perfil.email);
