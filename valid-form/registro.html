@@ -45,6 +45,7 @@
                 type="text"
                 placeholder="Nombre"
                 required
+                data-tipo="nombre"
               />
               <label class="input-label" for="name">Nombre</label>
               <span class="input-message-error">Este campo no es valido</span>
@@ -57,6 +58,7 @@
                 type="email"
                 placeholder="Email"
                 required
+                data-tipo="email"
               />
               <label class="input-label" for="email">Email</label>
               <span class="input-message-error">Este campo no es valido</span>
@@ -71,6 +73,7 @@
                 required
                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" 
                 title="Al menos 6 caracteres, maximo 12, debe contener una letra minuscula, una letra mayuscula, un numero y no puede contener caracteres especiales"
+                data-tipo="password"
               />
               <label class="input-label" for="password">Contraseña</label>
               <span class="input-message-error">Este campo no es valido</span>
