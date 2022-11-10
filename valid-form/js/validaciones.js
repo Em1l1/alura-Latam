@@ -35,6 +35,10 @@ const mensajeDeError = {
   nacimiento: {
     valueMissing: "Este campo fecha de nacimiento no puede estar vacion",
     customError: "Debes tener al menos 18 years old"
+  },
+  numero: {
+    valueMissing: "Este campo no puede estar vacion",
+    patternMissmatch: "El formato requerido es XXXXXXXXXX 10 numeros"
   }
 };
 
