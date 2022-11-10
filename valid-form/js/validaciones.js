@@ -51,7 +51,6 @@ const mensajeDeError = {
   estado: {
     valueMissing: "Este campo no puede estar vacio",
     patternMissmatch: "El estado debe contener entre 10 y 40"
-  }
 };
 
 const validadores = {
