@@ -5,33 +5,35 @@ export class CuentaCorriente {
   numero;
   agencia;
   #saldo;
+  cantidadCuentas = 0;
 
   // set the client
-  set setCliente(valor) {
+  set cliente(valor) {
     if (valor instanceof Cliente)
-    this.#cliente = valor
+      this.#cliente = valor;
   }
 
   // get the cliente
-  get getCliente() {
-    return this.#cliente
+  get cliente() {
+    return this.#cliente;
   }
 
-  constructor() {
-    this.#cliente = null
-    this.numero = '';
-    this.agencia = '';
+  constructor(cliente, numero, agencia) {
+    this.cliente = cliente;
+    this.numero = numero;
+    this.agencia = agencia;
     this.#saldo = 0;
+    this.cantidadCuentas++;
   }
 
   depositoEnCuenta(valor) {
-    if (valor > 0)
+    if (valor > 0) 
       this.#saldo += valor;
     return this.#saldo;
   }
 
   retirarDeCuenta(valor) {
-    if (valor <= this.#saldo)
+    if (valor <= this.#saldo) 
       this.#saldo -= valor;
     return this.#saldo;
   }
@@ -40,8 +42,8 @@ export class CuentaCorriente {
     return this.#saldo;
   }
 
-  transferirParaCuenta(valor,cuentaDestino) {
-    this.retirarDeCuenta(valor)
-    cuentaDestino.depositoEnCuenta(valor)
+  transferirParaCuenta(valor, cuentaDestino) {
+    this.retirarDeCuenta(valor);
+    cuentaDestino.depositoEnCuenta(valor);
   }
 }
