@@ -11,8 +11,7 @@ export class Cuenta {
 
   // set the client
   set cliente(valor) {
-    if (valor instanceof Cliente)
-      this.#cliente = valor;
+    if (valor instanceof Cliente) this.#cliente = valor;
   }
 
   // get the cliente
@@ -37,5 +36,11 @@ export class Cuenta {
   transferirParaCuenta(valor, cuentaDestino) {
     this.retirarDeCuenta(valor);
     cuentaDestino.depositoEnCuenta(valor);
+    valor = 200;
+    valor = valor * 1000;
+  }
+
+  prueba() {
+    console.log("Medoto padre");
   }
 }
