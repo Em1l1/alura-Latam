@@ -36,11 +36,13 @@ cliente2.rutCliente = "89899"
 const cuentaDeMaria = new CuentaCorriente();
 cuentaDeMaria.numero = "2"
 cuentaDeMaria.agencia = "002"
-cuentaDeMaria.cliente = cliente;
+cuentaDeMaria.cliente = cliente2;
 
 cuentaDeLeonardo.transferirParaCuenta(200,cuentaDeMaria)
 const saldoMaria = cuentaDeMaria.verSaldo();
 console.log(`El saldo actual es ${saldoMaria}`);
+
+console.log(cuentaDeMaria)
 
 const saldoLeonardo = cuentaDeLeonardo.verSaldo();
 console.log(`El saldo actual es ${saldoLeonardo}`);
