@@ -1,12 +1,14 @@
 export class CuentaCorriente {
+  cliente;
   numero;
-  #saldo;
   agencia;
+  #saldo;
 
   constructor() {
+    this.cliente = null
     this.numero = '';
-    this.#saldo = 0;
     this.agencia = '';
+    this.#saldo = 0;
   }
 
   depositoEnCuenta(valor) {
@@ -23,5 +25,10 @@ export class CuentaCorriente {
 
   verSaldo() {
     return this.#saldo;
+  }
+
+  transferirParaCuenta(valor,cuentaDestino) {
+    this.retirarDeCuenta(valor)
+    cuentaDestino.depositoEnCuenta(valor)
   }
 }

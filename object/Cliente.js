@@ -1,5 +1,6 @@
 /* Definicion de clases */
-class Cliente {
+export class Cliente {
+  cliente;
   nombreCliente;
   dniCliente;
   rutCliente;
