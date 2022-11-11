@@ -7,10 +7,10 @@ import { Cuenta } from "./Cuenta.js";
 const cliente = new Cliente("Leonardo", "123456", "123321");
 const cliente2 = new Cliente("Maria", "123142", "89899");
 
-const cuentaDeLeonardo = new Cuenta(cliente, "1", "001", 0);
-const cuentaDeMaria = new Cuenta(cliente2, "2", "001", 0);
+const cuentaDeLeonardo = new Cuenta('Corriente', cliente, "1", "001", 0);
+const cuentaDeMaria = new Cuenta('Corriente', cliente2, "2", "001", 0);
 
-const cuentaAhorroLeonardo = new Cuenta(cliente, '9985', '001', 0)
+const cuentaAhorroLeonardo = new Cuenta('Ahorro', cliente, '9985', '001', 0)
 
 console.log(cuentaDeLeonardo)
 cuentaDeLeonardo.depositoEnCuenta(150)
