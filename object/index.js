@@ -10,7 +10,7 @@ cliente.rutCliente = "123321";
 const cuentaDeLeonardo = new CuentaCorriente();
 cuentaDeLeonardo.numero = "1";
 cuentaDeLeonardo.agencia = "001";
-cuentaDeLeonardo.cliente = cliente;
+cuentaDeLeonardo.setCliente = cliente;
 
 console.log(cuentaDeLeonardo)
 // cuentaDeLeonardo.saldo = 0;
@@ -36,18 +36,23 @@ const cuentaDeMaria = new CuentaCorriente();
 cuentaDeMaria.numero = "2"
 cuentaDeMaria.agencia = "002"
 // cuentaDeMaria.cliente = 0
-cuentaDeMaria.cliente = cliente2;
+cuentaDeMaria.setCliente = cliente2;
 
-if (cuentaDeMaria.cliente)
-  console.log(cuentaDeMaria.cliente)
-else
-  console.log(cuentaDeMaria)
+// if (cuentaDeMaria.cliente)
+//   console.log(cuentaDeMaria.cliente)
+// else
+//   console.log(cuentaDeMaria)
 
-cuentaDeLeonardo.transferirParaCuenta(200,cuentaDeMaria)
-const saldoMaria = cuentaDeMaria.verSaldo();
-console.log(`El saldo actual es ${saldoMaria}`);
+console.log(cuentaDeLeonardo.getCliente)
+console.log(cuentaDeMaria.cliente)
+cuentaDeMaria.setliente = 0
+console.log(cuentaDeMaria.getCliente)
 
-console.log(cuentaDeMaria)
+// cuentaDeLeonardo.transferirParaCuenta(200,cuentaDeMaria)
+// const saldoMaria = cuentaDeMaria.verSaldo();
+// console.log(`El saldo actual es ${saldoMaria}`);
 
-const saldoLeonardo = cuentaDeLeonardo.verSaldo();
-console.log(`El saldo actual es ${saldoLeonardo}`);
+// console.log(cuentaDeMaria)
+
+// const saldoLeonardo = cuentaDeLeonardo.verSaldo();
+// console.log(`El saldo actual es ${saldoLeonardo}`);
