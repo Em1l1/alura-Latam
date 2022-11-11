@@ -19,19 +19,32 @@ class CuentaCorriente {
   depositoEnCuenta(valor) {
     if (valor > 0)
       this.#saldo += valor;
+    return this.#saldo;
   }
 
   retirarDeCuenta(valor) {
     if (valor <= this.#saldo)
       this.#saldo -= valor;
+    return this.#saldo;
+  }
+
+  verSaldo() {
+    return this.#saldo;
   }
 }
+
+
 
 cuentaDeLeonardo = new CuentaCorriente();
 // cuentaDeLeonardo.saldo = 0;
 
-console.log(cuentaDeLeonardo);
-cuentaDeLeonardo.depositoEnCuenta(-100);
-console.log(cuentaDeLeonardo);
-cuentaDeLeonardo.retirarDeCuenta(250);
-console.log(cuentaDeLeonardo);
+let saldo = cuentaDeLeonardo.verSaldo();
+console.log(`El saldo actual es ${saldo}`)
+// console.log(cuentaDeLeonardo);
+saldo = cuentaDeLeonardo.depositoEnCuenta(500);
+console.log(`El saldo actual es ${saldo}`)
+
+// console.log(cuentaDeLeonardo);
+saldo = cuentaDeLeonardo.retirarDeCuenta(502);
+console.log(`El saldo actual es ${saldo}`)
+// console.log(cuentaDeLeonardo);
