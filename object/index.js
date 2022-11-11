@@ -11,7 +11,5 @@ const cuentaDeMaria = new CuentaCorriente(cliente2, "2", "001");
 let saldo = cuentaDeLeonardo.verSaldo();
 
 saldo = cuentaDeLeonardo.depositoEnCuenta(800);
-console.log(`El saldo actual ${saldo}`);
 
-console.log(cuentaDeLeonardo.cliente);
-console.log(cuentaDeMaria.cliente);
+console.log(CuentaCorriente.cantidadCuentas);

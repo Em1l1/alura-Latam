@@ -5,7 +5,8 @@ export class CuentaCorriente {
   numero;
   agencia;
   #saldo;
-  cantidadCuentas = 0;
+  
+  static cantidadCuentas = 0;
 
   // set the client
   set cliente(valor) {
@@ -23,7 +24,7 @@ export class CuentaCorriente {
     this.numero = numero;
     this.agencia = agencia;
     this.#saldo = 0;
-    this.cantidadCuentas++;
+    CuentaCorriente.cantidadCuentas++;
   }
 
   depositoEnCuenta(valor) {
