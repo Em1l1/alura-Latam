@@ -1,30 +1,15 @@
 import { Cliente } from "./Cliente.js";
+import { Cuenta } from "./Cuenta.js";
 
-export class CuentaCorriente {
-  #cliente;
-  numero;
-  agencia;
-  #saldo;
+export class CuentaCorriente extends Cuenta {
   
   static cantidadCuentas = 0;
 
-  // set the client
-  set cliente(valor) {
-    if (valor instanceof Cliente)
-      this.#cliente = valor;
-  }
+ 
 
-  // get the cliente
-  get cliente() {
-    return this.#cliente;
-  }
-
-  constructor(cliente, numero, agencia) {
-    this.cliente = cliente;
-    this.numero = numero;
-    this.agencia = agencia;
-    this.#saldo = 0;
-    CuentaCorriente.cantidadCuentas++;
+  constructor(cliente, numero, agencia, saldo) {
+    super(cliente, numero, agencia, saldo)
+    // CuentaCorriente.cantidadCuentas++;
   }
 
 

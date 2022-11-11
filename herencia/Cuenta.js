@@ -2,12 +2,22 @@ export class Cuenta {
   #cliente;
   #saldo;
 
-  constructor(tipo, cliente, numero, agencia, saldo) {
-    this.tipo = tipo;
+  constructor(cliente, numero, agencia, saldo) {
     this.numero = numero;
     this.agencia = agencia;
     this.#cliente = cliente;
     this.#saldo = saldo;
+  }
+
+  // set the client
+  set cliente(valor) {
+    if (valor instanceof Cliente)
+      this.#cliente = valor;
+  }
+
+  // get the cliente
+  get cliente() {
+    return this.#cliente;
   }
 
   depositoEnCuenta(valor) {
@@ -16,10 +26,6 @@ export class Cuenta {
   }
 
   retirarDeCuenta(valor) {
-    if (this.tipo == 'Corriente')
-      valor = valor * 1.05
-    else if (this.tipo == 'Ahorro')
-      valor = valor * 1.02
     if (valor <= this.#saldo) this.#saldo -= valor;
     return this.#saldo;
   }
