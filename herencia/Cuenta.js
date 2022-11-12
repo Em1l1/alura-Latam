@@ -3,6 +3,10 @@ export class Cuenta {
   #saldo;
 
   constructor(cliente, numero, agencia, saldo) {
+    
+    if(this.constructor == Cuenta) {
+      console.log("No es posisble instanciar objetos de  la clase cuenta")
+    }
     this.numero = numero;
     this.agencia = agencia;
     this.#cliente = cliente;
@@ -29,7 +33,7 @@ export class Cuenta {
   retirarDeCuenta(valor, comision) {
     _retirarDeCuenta(valor, 0)
   }
-  
+
   _retirarDeCuenta(valor, comision) {
     valor = valor * (1+comision/100)
     if (valor <= this.#saldo) 
