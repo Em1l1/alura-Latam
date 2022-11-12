@@ -5,7 +5,7 @@ export class Cuenta {
   constructor(cliente, numero, agencia, saldo) {
     
     if(this.constructor == Cuenta) {
-      console.log("No es posisble instanciar objetos de  la clase cuenta")
+      throw new Error("No es posisble instanciar objetos de  la clase cuenta")
     }
     this.numero = numero;
     this.agencia = agencia;
