@@ -30,8 +30,10 @@ export class Cuenta {
     return this.#saldo;
   }
 
-  retirarDeCuenta(valor, comision) {
-    _retirarDeCuenta(valor, 0)
+  retirarDeCuenta(valor) {
+    // this._retirarDeCuenta(valor, 0)
+    // Metodo asbtracto
+    throw new Error("Debe implementar el metodo retirarDeCuenta en su clase")
   }
 
   _retirarDeCuenta(valor, comision) {
