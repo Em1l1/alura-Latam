@@ -11,7 +11,8 @@ export class Cuenta {
 
   // set the client
   set cliente(valor) {
-    if (valor instanceof Cliente) this.#cliente = valor;
+    if (valor instanceof Cliente) 
+      this.#cliente = valor;
   }
 
   // get the cliente
@@ -20,12 +21,19 @@ export class Cuenta {
   }
 
   depositoEnCuenta(valor) {
-    if (valor > 0) this.#saldo += valor;
+    if (valor > 0) 
+      this.#saldo += valor;
     return this.#saldo;
   }
 
-  retirarDeCuenta(valor) {
-    if (valor <= this.#saldo) this.#saldo -= valor;
+  retirarDeCuenta(valor, comision) {
+    _retirarDeCuenta(valor, 0)
+  }
+  
+  _retirarDeCuenta(valor, comision) {
+    valor = valor * (1+comision/100)
+    if (valor <= this.#saldo) 
+      this.#saldo -= valor;
     return this.#saldo;
   }
 
@@ -38,9 +46,5 @@ export class Cuenta {
     cuentaDestino.depositoEnCuenta(valor);
     valor = 200;
     valor = valor * 1000;
-  }
-
-  prueba() {
-    console.log("Medoto padre");
   }
 }
