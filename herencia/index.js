@@ -20,10 +20,14 @@ const cuentaAhorroLeonardo = new CuentaAhorro(cliente, "9985", "001", 0);
 const empleado = new Empleado("Juan Perez", "123342", 10000);
 empleado.asignarClave('12323')
 const gerente = new Gerente("David Luiz", "1231212", 12000);
+gerente.asignarClave("123321")
 const director = new Director("Oscar Gomez", "9877632", 15000);
+director.asignarClave('234432')
 
 console.log(empleado.verBonifiacion())
 console.log(gerente.verBonifiacion())
 console.log(director.verBonifiacion())
 
 console.log(SistemaAutenticacion.login(empleado, '12323'))
+console.log(SistemaAutenticacion.login(gerente, '123321'))
+console.log(SistemaAutenticacion.login(director, '234432'))
