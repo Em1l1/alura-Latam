@@ -31,7 +31,7 @@ const createTask = (evento) => {
     value,
     dateFormat
   }
-  sessionStorage.setItem("tasks", JSON.stringify(taskObj))
+  localStorage.setItem("tasks", JSON.stringify(taskObj))
   const titleTask = document.createElement('span');
   titleTask.classList.add('task');
   titleTask.innerText = value;
