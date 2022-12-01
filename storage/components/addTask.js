@@ -17,6 +17,11 @@ export const addTask = (evento) => {
   // moment -> librery moment
   const dateFormat = moment(date).format('DD/MM/YYYY')
   
+  if (value === '' || date === '') {
+    return 
+    // console.log('No crear la tarea')
+  }
+
   // console.log(dateFormat)
   
   input.value = '';
