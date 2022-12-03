@@ -55,11 +55,7 @@ export const createTask = ({ value, dateFormat, complete, id }) => {
   //backticks
   const taskContent = document.createElement('div');
   // console.log(value, dateFormat)
-
-  console.log(complete)
-
   const check = checkComplete(id);
-
   if (complete) {
     console.log('completado')
     check.classList.toggle('fas');
@@ -78,6 +74,6 @@ export const createTask = ({ value, dateFormat, complete, id }) => {
   dateElement.innerHTML = dateFormat
   task.appendChild(taskContent);
   task.appendChild(dateElement)
-  task.appendChild(deleteIcon());
+  task.appendChild(deleteIcon(id));
   return task;
 };
