@@ -1,7 +1,7 @@
 {
   "perfil": [
     {
-      "nombre": "alura",
+      "nombre": "Alura",
       "email": "alura@alura.com",
       "id": "09973f78-2439-4dcd-87eb-e8e1467a0838"
     },
@@ -9,6 +9,16 @@
       "nombre": "pochita",
       "email": "ph@mail.com",
       "id": "e15d1e38-e79a-4377-abee-c43e22cf57aa"
+    },
+    {
+      "nombre": "Deny",
+      "email": "dy@chawson.com",
+      "id": "6e93d69a-f7d5-4298-85e9-a3d7d71953ae"
+    },
+    {
+      "nombre": "Deny",
+      "email": "dy@chawson.com",
+      "id": "69d50dad-1b89-4dc8-a7d2-12bbeb9f2478"
     }
   ]
 }
