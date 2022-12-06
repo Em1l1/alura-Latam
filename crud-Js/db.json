@@ -1,34 +1,14 @@
 {
   "perfil": [
     {
-      "nombre": "Harland Lohora",
-      "email": "harland@alura.com",
-      "id": 1
-    },
-    {
-      "nombre": "pedro",
-      "email": "holepredro@mail.com",
-      "id": "2a2e7a5b-9f30-4d16-b752-a2474a8e074e"
-    },
-    {
-      "nombre": "rosa",
-      "email": "rosa@mail.com",
-      "id": "741c0207-248a-409e-a7fb-f52c561ce921"
-    },
-    {
-      "nombre": "rosa",
-      "email": "eric@crud.js",
-      "id": "3c3931f9-ddba-41f0-8e8a-fc204643fa18"
-    },
-    {
-      "nombre": "Tomas",
-      "email": "tomas@alura.com",
-      "id": "ecd4ea58-0dbf-497e-9ad2-82a6e0a294f1"
-    },
-    {
       "nombre": "alura",
       "email": "alura@alura.com",
       "id": "09973f78-2439-4dcd-87eb-e8e1467a0838"
+    },
+    {
+      "nombre": "pochita",
+      "email": "ph@mail.com",
+      "id": "e15d1e38-e79a-4377-abee-c43e22cf57aa"
     }
   ]
 }
