@@ -1,0 +1,19 @@
+{
+  "perfil": [
+    {
+      "nombre": "Alura",
+      "email": "alura@alura.com",
+      "id": "09973f78-2439-4dcd-87eb-e8e1467a0838"
+    },
+    {
+      "nombre": "pochita",
+      "email": "ph@mail.com",
+      "id": "e15d1e38-e79a-4377-abee-c43e22cf57aa"
+    },
+    {
+      "nombre": "chawson ",
+      "email": "chw@chawson.com",
+      "id": "6e93d69a-f7d5-4298-85e9-a3d7d71953ae"
+    }
+  ]
+}
