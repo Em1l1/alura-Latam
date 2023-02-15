@@ -1,0 +1,17 @@
+@import url("./recta-boton.css");
+@import url("./receta-imagen.css");
+@import url("./receta-titulo.css");
+@import url("./receta-contenido.css");
+@import url("./receta-descripcion.css");
+@import url("./recetas.css");
+
+.receta {
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  margin-right: 5rem;
+  width: calc(25% - 5rem);
+}
+
+

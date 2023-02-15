@@ -12,3 +12,6 @@
 @import url("./sobre/sobre.css");
 @import url("./sobre/sobre-titulo.css");
 @import url("./sobre/sobre-descripcion.css");
+
+/* Receta */
+@import url("./receta/receta.css");
