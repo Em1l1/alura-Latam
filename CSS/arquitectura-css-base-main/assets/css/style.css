@@ -15,3 +15,16 @@
 
 /* Receta */
 @import url("./receta/receta.css");
+
+/* Quienes */
+@import url("./quienes/quienes.css");
+
+/* peronas */
+/* @import url("./personas/personas.css"); */
+@import url("./personas/personas.css");
+
+/* radapie */
+@import url("./rodapie/rodapie.css");
+
+/* logo */
+@import url("./logo.css");
