@@ -1,0 +1,7 @@
+@import url("./quienes-descripcion.css");
+@import url("./quienes-titulo.css");
+
+.quienes {
+  padding: 5rem;
+  text-align: center;
+}

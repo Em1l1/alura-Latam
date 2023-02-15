@@ -1,0 +1,14 @@
+@import url("./rodapie-icon.css");
+@import url("./rodapie-item.css");
+@import url("./rodapie-lista.css");
+@import url("./rodapie-titulo.css");
+@import url("./rodapie-descripcion.css");
+
+.rodapie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

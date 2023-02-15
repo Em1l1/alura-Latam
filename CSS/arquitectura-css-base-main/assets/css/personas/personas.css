@@ -1,0 +1,10 @@
+@import url("./persona.css");
+@import url("./persona-nombre.css");
+@import url("./persona-imagen.css");
+@import url("./persona-funcion.css");
+
+.personas {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
